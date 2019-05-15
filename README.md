@@ -17,12 +17,12 @@ Universal Restaurant Ordering App
 Instead of calling in to order food, allow user to search for relevant food in a search bar. 
 Compiles information of a bunch of restraunts and food on their menu.
 Give a sort of search tag to each dish.
-Similar to yelp, but more direct communication with restraunts.
+Similar to yelp, but more direct communication with restaurants
 
 Users: Hungry people...
 
 Entities: 
-Restraunt
+Restaurants
 -Menu
 -Prices
 -Location
@@ -32,7 +32,7 @@ Restraunt
 User
 -Account information(username/password info)
 -Credit Card Info
--Current location for local restraunts search
+-Current location for local restaurants search
 
 Milestones 1:
 Create basic search bar that allows users to fuzzy search for a particular food or dish.
