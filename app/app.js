@@ -39,7 +39,19 @@ var keyExists = function(key) {
   var currentValue = getItem(key);
   return currentValue !== null;
 }
+var search = function(){
+	  var searchInput = document.getElementById('restaurantSearch').value;
+	  var includesArr = [];
+	  console.log(window.localStorage);
+	for(var key in window.localStorage){
+		if(window.localStorage.key.searchTag.includes(searchInput)){
+			includesArr.push(window.localStorage.key);
+		}
+	}
+	console.log(includesArr);
+	return includesArr;
 
+  }
 
 ///////////////////////////////////////////
 //event handlers for the buttons and ... possibly the inputboxes
@@ -68,4 +80,6 @@ $(document).ready(function() {
       //current key doesnt exist, do stuff
     }
   });
+  
+
 });
