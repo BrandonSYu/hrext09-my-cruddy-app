@@ -2,7 +2,8 @@ import React, { Component } from "react";
 
 export default class TodoListForm extends React.Component {
     state = {
-        inputText : ""
+        inputText : "",
+        priority : "0"
     };
     
     changeHandler = (event) => {//onchange handler for text
@@ -14,13 +15,27 @@ export default class TodoListForm extends React.Component {
     submitHandler = (event) => { //form submission
         event.preventDefault();
         this.props.onSubmit({
-            inputText : this.state.inputText
+            inputText : this.state.inputText,
+            priority : this.state.priority
         });
         this.setState({//refresh textbox 
-            inputText: ""
+            inputText: "",
+            priority : "0"
         });
     };
     
+    incPriority = (event) =>{
+        event.preventDefault();
+        var prior = parseInt(this.state.priority)+1;
+        this.state.priority=prior.toString();
+        console.log(this.state.priority)
+    };
+    decPriority = (event) =>{
+        event.preventDefault();
+        var prior = parseInt(this.state.priority)-1;
+        this.state.priority=prior.toString();
+        console.log(this.state.priority)
+    };
   render() {
     return (
       <form onSubmit={this.submitHandler}>
@@ -30,8 +45,17 @@ export default class TodoListForm extends React.Component {
           onChange={this.changeHandler}
           placeholder="Enter something todo..."
         />
-        <button onClick={this.submitHandler}>add an item</button>
+        <input
+            name = "priority"
+            value = {this.state.priority}
+            onChange = {this.changeHandler}
+            //placeholder={this.state.priority}
+            />
+        <button onClick = {this.submitHandler}>add an item</button>
+        <button onClick = {this.incPriority}>+</button>
+        <button onClick = {this.decPriority}>-</button>
       </form>
+      
     );
   }
 }
