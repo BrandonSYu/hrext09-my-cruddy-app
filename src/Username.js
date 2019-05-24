@@ -1,13 +1,12 @@
 import React, { Component } from "react";
-import TodoListForm from "./TodoListForm";
+import UsernameForm from "./UsernameForm";
 
-export default class TodoList extends React.Component {
+export default class Username extends React.Component {
     state = {
       todolist : []  
     };
     addItem = (item) => {
         //this.state.todos.push(item);
-        
     this.setState({
         todolist : [item, ...this.state.todolist]
         });
@@ -16,7 +15,7 @@ export default class TodoList extends React.Component {
     render(){
         return (
         <div>
-        <TodoListForm onSubmit={this.addItem}/>
+        <UsernameForm onSubmit={this.addItem}/>
             {this.state.todolist.map(item => (
             <div id = "items">{item.inputText}</div>
             ))}

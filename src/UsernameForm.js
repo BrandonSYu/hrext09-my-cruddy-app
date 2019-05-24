@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export default class TodoListForm extends React.Component {
+export default class UsernameForm extends React.Component {
     state = {
         inputText : ""
     };
@@ -28,11 +28,10 @@ export default class TodoListForm extends React.Component {
           name="inputText"
           value={this.state.inputText}
           onChange={this.changeHandler}
-          placeholder="Enter something todo..."
+          placeholder="Enter username..."
         />
-        <button onClick={this.submitHandler}>add an item</button>
+        <button onClick={this.submitHandler}>Save or enter a username</button>
       </form>
     );
   }
 }
-
