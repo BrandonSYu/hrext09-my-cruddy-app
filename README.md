@@ -13,56 +13,35 @@ Create Read Update and Delete framework using JS
  ### Advanced Reqs
 - [ ] Item that I added goes here...
 
-###Restaurant Reservation and Dining App.
-(Initially planned on a Universal Restaurant Ordering App.)
+###React Todo List
+(Initially planned on a Restaurant Reservation and Dining App like GrubHub, but decided to switch to practice using React.)
 
-#Streamlined platfrom allowing the user to book a reservation at a restaurant at a certain time in advance, along with course menu.
+Building a Todo List that allows the user to add, delete, and sort tasks to practice using the React framework.
+Compare and contrast with building a using HTML, CSS, and Javascript(jQuery).
 
-Instead of having to call a restaurant to book a table in advance, allow user to check for occupancy of related food spots 
-given a certain cuisine or dish a search bar. 
-Compiles restaurant general restaurant data with a focus on menu and occupancy.
-Similar to Yelp and GrubHub, but more direct communication with restaurants due to requiring occupancy space, reservation data, and items on the menu.
+#Future Endeavors: Better styling adhering to UI/UX design pattern for ease of accessibility. Maybe saving data to a server separating data by user info.
 
-#Benefits: Give more business to restaurants, and allow them to better manage their occupancy, workload, and food preparation. 
-#Allow users to factor in occupancy and possible wait times to their dining choice. 
-
-#Future Endeavors: A.I. to give results based on user preference, recent searches, and GPS locationing.
-
-#Users: Hungry people... People who don't want to wait an hour for a table. 
+#Users: People who need  a list to help complete tasks.
 
 ##Entities: 
-#Restaurants
--Menu(Pictures to go along with menu?)
--Location
--Hour of operation
--Phone number
--Price
--Max Occupancy
--Current reservation data
--Some sort of graphical representation of restaurant layout
-
 #User
--Account information(username/password info)
--Current location for local restaurants search
--Credit Card Info(possibly)
+-User Tasks
+-Possibly user login info later
 
-Milestones 1:
-Create basic search bar that allows users to fuzzy search for a particular food or dish.
+Milestone 1:
+-Create the basic interface for tasks
 
-Milestone 2:
-Create functionality to pull the data from the search along with any additional data.
+Milestone 2: 
+-Allow user to add tasks
 
 Milestone 3:
-Styling ordering page to a nice manner following UI/UX design constraints.
+-Allow user to delete tasks
 
 Milestone 4:
-List restaurant data, such as location, phone, number, type of food, etc...
+-Allow user to sort tasks using Date, Alphabetical, Priority order
 
 Milestone 5:
-User login, mock credit card data, placing order functionality.
+-Improve CSS styling 
 
 Milestone 6:
-A restaurant account login to allow restaurants to update their info or change their menu.
-
-Milestone 7:
-A.I. to adjust results to be based off user preferences, recent searches, and possibly distance from current location using GPS.
+-Allow user to login and store tasks onto a server
