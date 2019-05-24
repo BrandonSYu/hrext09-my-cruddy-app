@@ -20,6 +20,7 @@ class App extends Component {
   };
 
   render() {
+    console.log("App Rendered!")
     return (
       <div className="App">
         <TodoList />

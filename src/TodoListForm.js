@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 export default class TodoListForm extends React.Component {
+    
     state = {
         inputText : "",
         priority : "0"
@@ -30,6 +31,7 @@ export default class TodoListForm extends React.Component {
         this.setState({inputText : this.state.inputText, priority: prior.toString()});
         //console.log(this.state.priority)
     };
+    
     decPriority = (event) =>{
         event.preventDefault();
         var prior = parseInt(this.state.priority)-1;
@@ -39,6 +41,7 @@ export default class TodoListForm extends React.Component {
     };
 
   render() {
+    console.log("TodoListForm rendered!")
     return (
       <form onSubmit={this.submitHandler}>
         <input
